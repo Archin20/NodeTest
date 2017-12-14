@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  .container
+  form(action="{{asset('home')}}", method='post', enctype='multipart/form-data')
+    .form-group
+      label(for='name') Name
+      input#name.form-control(type='text', name='name', placeholder='name')
+    .form-group
+      label(for='body') Body
+      textarea#body.form-control(name='body')
+    .form-group
+      label(for='exampleInputFile') File input
+      input#exampleInputFile(type='file', name='pict')
+      p.help-block Example block-level help text here.
+    button.btn.btn-default(type='submit') Submit

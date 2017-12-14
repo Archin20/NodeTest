@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		ul.menu#my_menu
+			li 
+				a(href='/') Главная
+			li
+				a(href='news') Новости
+			li
+				a(href='about') О компании
+			li
+				a(href='servise') Услуги
+		block content
