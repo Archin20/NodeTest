@@ -13,4 +13,8 @@ html
 				a(href='about') О компании
 			li
 				a(href='servise') Услуги
+	if	userid
+		a(href='/logout')	выход
+	else
+		a(href='/reg')	Регистрация	!{userid}
 		block content
